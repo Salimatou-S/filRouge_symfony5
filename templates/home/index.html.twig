@@ -1,0 +1,102 @@
+{% extends 'filrouge.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+
+	<main>
+		<div class="banner">
+			<p class="text">La mode est à vous!</p>
+			<video
+				class="vid" controls>
+				<!--<source src="video/video.MOV">-->
+				<source src="{{asset('filrouge/video/video2.MOV')}}">
+			</video>
+		</div>
+		<div class="item">
+			<p class="cat">Catégories</p>
+		</div>
+		<div class="categorie">
+			<div class="row">
+				<div class="col-lg-4 g-8">
+					<img src="{{asset('filrouge/images/fecomp10.jpg')}}" height="400" alt="...">
+					<h5 class="text-center femme">COLLECTION FEMME
+					</h5>
+					<p>
+						<a class="btn btn-warning" href="#" role="button">Découvrir</a>
+					</p>
+				</div>
+				<div class="col-lg-4 g-8">
+					<img src="{{asset('filrouge/images/ficomp-1.jpg')}}" height="400" alt="...">
+					<h5 class="text-center fille">COLLECTION FILLE</h5>
+					<p>
+						<a class="btn btn-danger" href="#" role="button">Découvrir</a>
+					</p>
+				</div>
+				<div class="col-lg-4 g-8">
+					<img src="{{asset('filrouge/images/accomp2.jpg')}}" height="400" alt="...">
+					<h5 class="text-center accessoires">ACCESSOIRES</h5>
+					<p>
+						<a class="btn btn-primary" href="#" role="button">Découvrir</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="nouv">
+
+			<p class="nouv">Nouveautés</p>
+
+		</div>
+		<div class="container marketing">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="{{asset('filrouge/images/vente6.jpg')}}" width="250" height="300" class="img-fluid" alt="...">
+					<h2>Elegania</h2>
+					<p>Collection femme - chic et décontractée</p>
+					<span>150€</span>
+				</div>
+
+				<div class="col-lg-2">
+					<img src="{{asset('filrouge/images/vente7.jpg')}}" width="250" height="300" class="img-fluid" alt="...">
+					<h2>Petunia</h2>
+					<p>Accessoires - Fait mains</p>
+					<span>90€</span>
+				</div>
+				<div class="col-lg-2">
+					<img src="{{asset('filrouge/images/vente8.jpg')}}" width="250" height="300" class="img-fluid" alt="...">
+					<h2>Lolita</h2>
+					<p>Collection femme - Chic et décontractée</p>
+					<span>150€</span>
+				</div>
+				<div class="col-lg-2">
+					<img src="{{asset('filrouge/images/vente9.jpg')}}" width="250" height="300" class="img-fluid" alt="...">
+					<h2>Magenta</h2>
+					<p>Accessoires - Sac et chaussures</p>
+					<span>150€</span>
+				</div>
+				<div class="col-lg-2">
+					<img src="{{asset('filrouge/images/vente11.jpg')}}" width="250" height="300" class="img-fluid" alt="...">
+					<h2>Julia</h2>
+					<p>Collection fille - Robe de cérémonie</p>
+					<span>60€</span>
+				</div>
+				<div class="col-lg-2">
+					<img src="{{asset('filrouge/images/fi_4-mini.jpg')}}" width="250" height="300" class="img-fluid" alt="...">
+					<h2>Sherry</h2>
+					<p>Collection fille - Tenue de soirée</p>
+					<span>70€</span>
+				</div>
+			</div>
+		</div>
+{# 		<div class="defil">
+			<img class="defil" src="{{asset('filrouge/images/dj.png')}}" alt="defil">
+			<a href="index1.html">
+				<img class="defil" src="{{asset('filrouge/images/db.png')}}" alt="defil"></a>
+			<img class="defil" src="{{asset('filrouge/images/db.png')}}" alt="defil">
+			<img class="defil" src="{{asset('filrouge/images/db.png')}}" alt="defil">
+		</div>
+ #}	</main>
+
+
+{% endblock %}
